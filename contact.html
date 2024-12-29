@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The Granton Gas Holder is a historic landmark located in the Granton
+    area of Edinburgh, Scotland. It was built in 1903 and was used to
+    store gas for the city's streetlights and homes. The structure is 91
+    meters in height and was one of the largest in Europe when it was
+    built. It was decommissioned in 1997 but still stands today as a
+    landmark and a reminder of the city's industrial past."
+    />
+    <meta
+      name="keywords"
+      content="Granton Gas Holder Edinburgh Granton Gas Works Contact Us"
+    />
+    <meta name="author" content="Mateusz Kondracki" />
+
+    <title>Contact Us</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+
+    <!--JavaScript -->
+    <script src="https://unpkg.com/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md sticky-top navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- LOGO -->
+        <a class="navbar-brand me-auto" href="index.html">
+          <img src="images/ggs_logo.png" alt="Logo" class="logo" />
+        </a>
+
+        <!-- BURGER MENU -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAV LINKS -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="live.html">Live</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="location.html">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="links.html">Links</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+    <main id="contact_background">
+      <!--TEXT CONTAINERS-->
+      <div class="container">
+        <div class="row">
+          <div class="text-center text-md-center">
+            <h1 class="text-contact">Granton Gas Holder</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="text-center text-md-center">
+            <h1 class="text-contact">Feel free to contact us</h1>
+          </div>
+        </div>
+      </div>
+      <!--CONTACT FORM-->
+      <form
+        action="php_code.php"
+        method="post"
+        class="needs-validation"
+        novalidate
+      >
+        <div class="row g-3">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <label for="first-name" class="form-label">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="first-name"
+              name="first-name"
+              placeholder="Enter First Name"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please enter a valid first name.</div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <label for="last-name" class="form-label">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="last-name"
+              name="last-name"
+              placeholder="Enter Last Name"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please enter a valid last name.</div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <label for="email" class="form-label">Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email_field"
+              placeholder="Enter Email"
+              required
+            />
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="3"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please enter a valid message.</div>
+          </div>
+          <div class="form-check col-lg-4 col-md-4 col-sm-12">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="terms"
+              required
+            />
+            <label class="form-check-label" for="terms"
+              >I agree to the terms and conditions</label
+            >
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">
+              Please agree to the terms and conditions.
+            </div>
+          </div>
+          <!--END OF CONTACT FORM-->
+          <!--SUBMIT BUTTON AND TEXT CONTAINER-->
+          <div class="d-flex" id="yyz">
+            <div>
+              <button type="submit" class="btn btn-primary" id="button">
+                Submit
+              </button>
+            </div>
+            <div>
+              <h1 class="thanks">
+                Thanks for contacting us! We will response as soon as possible.
+              </h1>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!--TEXT CONTAINER-->
+      <div class="container">
+        <div class="row">
+          <div class="text-center text-md-center">
+            <h1 class="text-contact">
+              Preserving our past, inspiring our future
+            </h1>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--SEPARATOR-->
+    <section class="seperator-wrapper">
+      <div class="seperator gradient"></div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-dark text-white py-3">
+      <!-- SPONSOR LOGOS -->
+      <div class="row mt-3">
+        <div class="sponsor-logo col-md-6 text-center">
+          <a href="https://21ccgroup.com/" target="_blank">
+            <img
+              src="images/21CC Group_white.png"
+              class="me-3 footer-img"
+              alt="21CC GROUP LTD"
+              class="logo1"
+            />
+          </a>
+          <a
+            href="https://www.edinburghcollege.ac.uk/about-us/our-faculties/creative-industries"
+            target="_blank"
+          >
+            <img
+              src="images/CI Logo.png"
+              class="me-3 footer-img"
+              alt="CREATIVE INDUSTRIES EDINBURGHG COLLEGE"
+              class="logo2"
+            />
+          </a>
+          <a href="https://www.edinburgh.gov.uk/" target="_blank">
+            <img
+              src="images/Edinburgh Council.png"
+              class="me-3 footer-img"
+              alt="THE CITY OF EDINBURGH COUNCIL"
+              class="logo3"
+            />
+          </a>
+        </div>
+        <div class="col-md-6 text-center footer-text">
+          <!-- SHORT DESCRIPTION -->
+          <p class="mb-0">
+            The Granton Gas Holder is a historic landmark located in the Granton
+            area of Edinburgh, Scotland. It was built in 1903 and was used to
+            store gas for the city's streetlights and homes. The structure is 91
+            meters in height and was one of the largest in Europe when it was
+            built. It was decommissioned in 1997 but still stands today as a
+            landmark and a reminder of the city's industrial past.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName("needs-validation");
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(
+              forms,
+              function (form) {
+                form.addEventListener(
+                  "submit",
+                  function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                  },
+                  false
+                );
+              }
+            );
+          },
+          false
+        );
+      })();
+    </script>
+  </body>
+</html>
